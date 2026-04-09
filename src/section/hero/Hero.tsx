@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex justify-center items-center gap-[70px]">
+    <div className="flex justify-center items-center gap-[150px]">
       <div>
         <h5 className="text-[48px] font-bold">
           Sync Your <br /> Workflow <br /> Seamlessly
@@ -22,8 +22,8 @@ const Hero = () => {
         <Image
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
           alt="hero-image"
-          width={616}
-          height={395}
+          width={530}
+          height={345}
         />
       </div>
     </div>

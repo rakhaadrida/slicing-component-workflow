@@ -4,7 +4,7 @@ import "../../app/globals.css";
 const Navbar = () => {
   return (
     <div className="w-screen relative">
-      <nav className="max-w-[100vw] w-full flex justify-between items-center p-[50px] mx-auto">
+      <nav className="max-w-[100vw] w-full flex justify-between items-center pt-[50px] px-[50px] mx-auto">
         Navbar Logo
         <div className="flex gap-[60px] items-center">
           <a href="#" className="text-[20px] font-bold hover:text-primary">

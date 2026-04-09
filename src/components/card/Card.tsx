@@ -15,17 +15,17 @@ const Card = (props: cardProps) => {
   const cardStyling = () => {
     switch (props.position) {
       case "LEFT":
-        return "h-[502px] rounded-l-2xl border-[1px] border-text-grey";
+        return "h-[502px] rounded-l-2xl border-t-[1px] border-l-[1px] border-b-[1px] border-text-grey";
       case "RIGHT":
-        return "h-[502px] rounded-r-2xl border-[1px] border-text-grey";
+        return "h-[502px] rounded-r-2xl border-t-[1px] border-r-[1px] border-b-[1px] border-text-grey";
       default:
-        return "h-[552px] rounded-2xl";
+        return "h-[552px] rounded-2xl drop-shadow-[0_0_100px_rgba(0,0,0,0.3)]";
     }
   };
 
   return (
     <div
-      className={`w-[375px] bg-white ${cardStyling()} drop-shadow-[0_0_100px_rgba(0,0,0,0.3)] flex justify-between flex-col`}
+      className={`w-[375px] bg-white ${cardStyling()} flex justify-between flex-col`}
     >
       <div className="p-[24px]">
         <h6 className="text-[36px] font-bold">{props.label}</h6>
